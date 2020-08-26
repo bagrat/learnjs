@@ -1,5 +1,6 @@
-name: GitHub Pages action
+name: Publish Web Page
 uses: peaceiris/actions-gh-pages@v3.6.4
+on: push
 with:
   deploy_key: ${{ secrets.GH_PRIVATE_KEY }}
   publish_dir: ./
