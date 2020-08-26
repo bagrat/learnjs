@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+  height: 100%;
+  font-family: -apple-system, system-ui, 'Roboto', sans-serif;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  color: #0774a6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #109ac4;
+  text-decoration: underline;
+}
+
+.page {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 28%;
+  padding-left: 28%;
+}
