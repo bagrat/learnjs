@@ -1,7 +1,11 @@
 name: Publish Web Page
-uses: peaceiris/actions-gh-pages@v3.6.4
 on: push
-with:
-  deploy_key: ${{ secrets.GH_PRIVATE_KEY }}
-  publish_dir: ./
-  publish_branch: master
+jobs:
+  publish:
+    steps:
+      - name: publish
+        uses: peaceiris/actions-gh-pages@v3.6.4
+        with:
+          deploy_key: ${{ secrets.GH_PRIVATE_KEY }}
+          publish_dir: ./
+          publish_branch: master
