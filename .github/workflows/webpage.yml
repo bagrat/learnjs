@@ -2,6 +2,7 @@ name: Publish Web Page
 on: push
 jobs:
   publish:
+    runs-on: ubuntu-latest
     steps:
       - name: publish
         uses: peaceiris/actions-gh-pages@v3.6.4
