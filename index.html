@@ -8,80 +8,120 @@
     <meta charset='utf-8'>
     <title>Learn JavaScript</title>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='script.js'></script>
+    <script src='index.js'></script>
 </head>
 <body>
-  <section id="hey" class="page">
-    <h1>Hey,</h1>
+  <header>
+  </header>
+  <main>
+    <section id="hey" class="page">
+      <h1>Hey,</h1>
 
-    <p>
-    What you are reading is a text in a web-page that is being shown by your browser.
-    The reason why you are reading this that you have probably typed in your address bar
-    or clicked a link somewhere else that brought you to <a href="https://js.bagrat.io">js.bagrat.io</a>,
-    which expectedly happens to host this web-page.
-    </p>
+      <p>
+      What you are reading is a text in a web-page that is being shown by your browser.
+      The reason why you are reading this is that you have probably typed in your address bar
+      or clicked a link somewhere else that brought you to <a id="link0" href="https://js.bagrat.io">js.bagrat.io</a>,
+      which expectedly happens to host this web-page.
+      </p>
 
-    <p>
-    The reason why <em>you</em> visited this web-page is only in your own brain,
-    but what I can definitely tell you, is the reason <em>I</em> made this web-page.
-    </p>
+      <p>
+      The reason why <em>you</em> visited this web-page is only in your own brain,
+      but what I can definitely tell you, is the reason <em>I</em> made this web-page.
+      </p>
 
-    <p>
-    At some point in my programming career I had to learn JavaScript. I started with an online
-    course <a href="">"JavaScript Essential Training"</a>. If you know Richard Feynman, then you
-    most probably also know that the best way to learn well is to try to teach the topic to someone else.
-    That is exactly what I am going to try to do here.
-    </p>
+      <p>
+      At some point in my programming career I had to learn JavaScript. I started with an online
+      course <a id="link1" href="">"JavaScript Essential Training"</a>. If you know Richard Feynman, then you
+      most probably also know that the best way to learn well is to try to teach the topic to someone else.
+      That is exactly what I am going to try to do here.
+      </p>
 
-    <p>
-    If you are still reading this, then you are probably still interested in learning JavaScript.
-    Your background does not really matter if you want to learn just out of fun, curiosity or basic
-    professional needs. However, if your intentions spread further into full-time professional area
-    then you will need some more relevant fundamental material to learn.
-    </p>
+      <p>
+      If you are still reading this, then you are probably still interested in learning JavaScript.
+      Your background does not really matter if you want to learn just out of fun, curiosity or basic
+      professional needs. However, if your intentions spread further into full-time professional area
+      then you will need some more relevant fundamental material to learn.
+      </p>
 
-    <p>
-    Another enabler of effective learning is understanding why you are learning something and where you
-    will be able to apply it. The advanced stage of learning and practice is applying the tools you
-    learn productively. Initially JavaScript was invented to program web-pages and make them more
-    dynamic.
-    </p>
+      <p>
+      Another enabler of effective learning is understanding why you are learning something and where you
+      will be able to apply it. The advanced stage of learning and practice is applying the tools you
+      learn productively. Initially JavaScript was invented to program web-pages and make them more
+      dynamic.
+      </p>
 
-    <p>
-    I have already used the term "web-page" 3 times in this web-page. Now 5. And before we even try to
-    understand what does it mean to program a web-page with JavaScript, we first need to understand and
-    agree on what the <strong>Web</strong> is.
-    </p>
+      <p>
+      I have already used the term "web-page" 3 times in this web-page. Now 5. And before we even try to
+      understand what does it mean to program a web-page with JavaScript, we first need to understand and
+      agree on what the <strong>Web</strong> is.
+      </p>
 
-    <p>
-    The <strong>Internet</strong> is the <em>technology</em> that enables multiple computers to talk to
-    each other while being geographically distributed inter-connected over physical network.
-    The <strong>Web</strong> is another layer of abstraction on top of the Internet, being a set of
-    documents inter-connected via links, i.e. a web of documents.
-    </p>
+      <p>
+      The <strong>Internet</strong> is the <em>technology</em> that enables multiple computers to talk to
+      each other while being geographically distributed inter-connected over physical network.
+      The <strong>Web</strong> is another layer of abstraction on top of the Internet, being a set of
+      documents inter-connected via links, i.e. a web of documents.
+      </p>
 
-    <p>
-    Simply put, Some computers on the internet have names, like <code>google.com</code> and <code>wikipedia.org</code>.
-    When you enter the computer name in the address bar of your browser, the browser talks to that computer and asks
-    it to send back the document named <code>index.html</code> in the root directory of the computer. If you want another
-    document, you can specify the name of the desired document using a slash (/) like this:
-    <code>js.bagrat.io/another-document.html</code>
-    </p>
+      <p>
+      Simply put, Some computers on the internet have names, like <code>google.com</code> and <code>wikipedia.org</code>.
+      When you enter the computer name in the address bar of your browser, the browser talks to that computer and asks
+      it to send back the document named <code>index.html</code> in the root directory of the computer. If you want another
+      document, you can specify the name of the desired document using a slash (<code>/</code>) like this:
+      <code>js.bagrat.io/another-document.html</code>
+      </p>
 
-    <p>
-    For example, if we take the computer named <code>js.bagrat.io</code>, typing in the address bar <code>js.bagrat.io</code> or
-    <code>js.bagrat.io/index.html</code> will return the same document, which is <code>index.html</code> on computer
-    <code>js.bagrat.io</code>. You might have noticed the <code>.html</code> suffix multiple times already. Don't worry,
-    we will talk about it soon.
-    </p>
+      <p>
+      For example, if we take the computer named <code>js.bagrat.io</code>, typing in the address bar <code>js.bagrat.io</code> or
+      <code>js.bagrat.io/index.html</code> will return the same document, which is <code>index.html</code> on computer
+      <code>js.bagrat.io</code>. You might have noticed the <code>.html</code> suffix multiple times already. Don't worry,
+      we will talk about it soon.
+      </p>
 
-    <p>
-    Now this <code>index.html</code> is just a single document. I authored and put this document on the <code>js.bagrat.io</code>
-    computer. Since I control this computer, I have also put another document to demonstrate the web to you.
-    That other document is next to the <code>index.html</code> document in the root directory, named <code>the-web.html</code>.
-    So if you remember the slash (/) you have just learnt about you might have already guessed that the
-    address of that document in the Web is <code>js.bagrat.io/the-web.html</code>.
-    </p>
-  </section>
+      <p>
+      Now this <code>index.html</code> is just a single document. I authored and put this document on the <code>js.bagrat.io</code>
+      computer. Since I control this computer, I have also put another document to demonstrate the web to you. That other document
+      is next to the <code>index.html</code> document in the root directory, named <code>the-web.html</code>. So if you remember
+      the slash (<code>/</code>) you have just learnt about you might have already guessed that the address of that document
+      in the Web is <code>js.bagrat.io/the-web.html</code>.
+      </p>
+
+      <p>
+      <strong>BUT WAIT!</strong>
+      </p>
+
+      <p>
+      Before you rush to type the address of the document in the address bar of your browser (which would work, please try it later),
+      let me recap.
+      </p>
+
+      <p>
+      Again, the Web is a set of documents inter-connected via links. We have seen document addressess like <code>js.bagrat.io/index.html</code>
+      and <code>js.bagrat.io/the-web.html</code>. We haven't yet seen the contents of the <code>the-web.html</code> document,
+      but what you are reading right now is the contents of the <code>index.html</code> presented by your browser. We will
+      get back to this later, back to the point now. So documents, are just pieces of information, for simplicity,
+      consider text like this document. But then what about links by which the documents are inter-connected in the Web?
+      </p>
+
+      <p>
+      A link is simply reference in one document to another document in the Web. When I have the address of my other document
+      in this one, it is also logically a reference to <code>js.bagrat.io/the-web.html</code>. However, if you write the
+      reference in a special way, about which we will talk soon, the browser makes it handy for the reader to navigate using
+      those links. So instead of typing the adrees in the address bar, you just click on the reference or link for short.
+      </p>
+
+      <p id="linkDemo">
+      You have actually already seen a couple of links in this document...
+      </p>
+
+      <div>
+        <p>Do you remember where? (click "Yes" or "No" below)</p>
+        <button onclick="transition('linkDemo_Scroll')">Yes</button>
+        <button onclick="transition('linkDemo_Scroll')">No</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
 </body>
 </html>
