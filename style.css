@@ -77,10 +77,10 @@ button {
 }
 
 .fade-out-in {
-  animation: fadeOut cubic-bezier(0,1.02,.37,.98) 3s none alternate 2;
+  animation: colorFadeOut cubic-bezier(0,1.02,.37,.98) 2s none alternate 2;
 }
 
-@keyframes fadeOut {
+@keyframes colorFadeOut {
   0% {
     color: #000000;
   }
@@ -90,7 +90,7 @@ button {
 }
 
 .link-emphasize {
-  animation: kfEmphasize ease-in-out 3s both 2 alternate;
+  animation: kfEmphasize ease-in-out 2s both 2 alternate;
 }
 
 @keyframes kfEmphasize {
@@ -99,5 +99,21 @@ button {
   }
   100% {
     font-size: 1.4em;
+  }
+}
+
+.nav-fade-out {
+  animation: fadeOut ease 1s both  1;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    max-height: 500px;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0;
+    display: none;
   }
 }
